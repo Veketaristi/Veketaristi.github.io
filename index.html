@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Underpiano & Underorchestra & AU music's website</title>
+    </head>
+    <body>
+        <nav id="navbar">
+            <div id="veke">
+                <h4><a target="_blank" href="https://m.youtube.com/channel/UCGzup4Wgn_q_AuKli6d9meA">Underpiano & Underorchestra & AU music</a></h4>
+            </div>
+            <ul>
+                <li onclick="home();">Home</li>
+                <li onclick="games();">Mods</li>
+                <li onclick="channel();">Youtube</li>
+            </ul>
+        </nav>
+        <div id="homeCont">
+            <div id="centDiv">
+                <h1 id="homeH">Welcome to</h1>
+                <h2 id="homeH2">Underpiano & Underorchestra & AU music's website</h2>
+            </div>
+        </div>
+        <div id="gamesCont">
+            <div class="games">Underpiano mod (incomplete)</div>
+            <div class="games">Underorchestra mod (incomplete)</div>
+        </div>
+        <div id="channelCont">
+            <h4>I arrange (and possibly compose) piano and orchestra music on computer. (I don't play it myself on this channel.) I'm going to make two mods for Undertale; Underpiano and Underorchestra. The mods are gonna replace the original soundtrack of Undertale with piano/orchestra arrangements. It would be really nice if you subscribed to my channel from the link in the top-left part of the screen. Thank you!</h4>
+        </div>
+        <script>
+            var homex = document.getElementById("homeCont");
+            var channelx = document.getElementById("channelCont");
+            var gamesx = document.getElementById("gamesCont");
+            gamesx.style.display = "none";
+            channelx.style.display = "none";
+            function home () {
+                homex.style.display = "block";
+                channelx.style.display = "none";
+                gamesx.style.display = "none";
+            }
+            function channel () {
+                homex.style.display = "none";
+                channelx.style.display = "block";
+                gamesx.style.display = "none";
+            }
+            function games () {
+                homex.style.display = "none";
+                channelx.style.display = "none";
+                gamesx.style.display = "block";
+            }
+        </script>
+        <style>
+            * {
+                padding: 0px;
+                margin: 0px;
+                overflow: hidden;
+            }
+            body {
+                display: flex;
+            }
+            ul {
+                list-style: none;
+            }
+            nav {
+                width: 30vw;
+                height: 100vh;
+                background-color: #272727;
+                color: #ffffff;
+                margin: 0px;
+            }
+            li {
+                text-align: center;
+                padding-top: 5vh;
+                padding-bottom: 5vh;
+                border-bottom: 5px solid #b54c4c;
+                transition: 0.5s;
+                cursor: default;
+            }
+            li:hover {
+                background-color: #b54c4c;
+                border-bottom: 5px solid #ffffff;
+            }
+            #veke {
+                text-align: center;
+                padding-top: 5vh;
+                padding-bottom: 5vh;
+                border-bottom: 5px solid #b54c4c;
+            }
+            #veke a {
+                color: #b54c4c;
+            }
+            #homeCont {
+                width: 70vw;
+                height: 100vh;
+                background-color: #373737;
+                text-align: center;
+                color: #ffffff;
+                margin: 0px;
+            }
+            #homeH {
+                background-color: #373737;
+                animation-name: homp;
+                animation-duration: 1s;
+                letter-spacing: 2px;
+            }
+            #homeH2 {
+                color: #b54c4c;
+            }
+            #centDiv {
+                margin-top: 30vh;
+            }
+            @keyframes homp {
+                0% {
+                    margin-bottom: -25px;
+                    opacity: 0;
+                    letter-spacing:0px;
+                }
+                50% {
+                    opacity: 0.3;
+                }
+                100% {
+                    margin-bottom: 0px;
+                    opacity: 1;
+                    letter-spacing: 2px;
+                }
+            }
+            .games {
+                background-color: #b54c4c;
+                border-bottom: 3px solid #00cdff;
+                color: #ffffff;
+                width: 70vw;
+                text-align: center;
+                padding-top: 3vh;
+                padding-bottom: 3vh;
+            }
+            .games a {
+                color: #ffffff;
+            }
+            #gamesCont {
+                background-color: #373737;
+                margin: 0px;
+            }
+            #channelCont {
+                width: 70vw;
+                height: 100vh;
+                background-color: #373737;
+                color: #ffffff;
+                text-align: center;
+                margin: 0px;
+            }
+            #channelCont h4 {
+                padding-top: 5vh;
+                margin-bottom: 0px;
+                padding-bottom: 0px;
+            }
+                    </style>
+                </body>
+            </html>
